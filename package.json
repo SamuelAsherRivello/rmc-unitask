@@ -8,5 +8,9 @@
     "keywords": [ "async/await", "async", "Task", "UniTask" ],
     "license": "MIT",
     "category": "Task",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/SamuelAsherRivello/rmc-unitask"
+    },
     "dependencies": {}
 }
