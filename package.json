@@ -2,7 +2,7 @@
     "name": "com.rmc.rmc-unitask",
     "displayName": "Forked by RMC. UniTask",
     "author": { "name": "Cysharp, Inc.", "url": "https://cysharp.co.jp/en/" },
-    "version": "2.3.32",
+    "version": "2.3.33",
     "unity": "2018.4",
     "description": "Forked by RMC. Provides an efficient async/await integration to Unity.",
     "keywords": [ "async/await", "async", "Task", "UniTask" ],
