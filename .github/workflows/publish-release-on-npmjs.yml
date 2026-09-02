@@ -6,10 +6,16 @@ name: Publish Release On NPMJS
 on:
   release:
    types: [published]
- 
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
 jobs:
   build:
    runs-on: ubuntu-latest
+   environment: NPM_ENVIRONMENT
    steps:
    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
    - uses: actions/checkout@v3
@@ -24,5 +30,3 @@ jobs:
    
    # Publish to npm
    - run: npm publish --access public
-     env:
-       NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
